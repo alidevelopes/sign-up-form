@@ -9,10 +9,19 @@
   <body>
     <div class="wrapper">
       <div class="container left">
-        <a
-          href="https://unsplash.com/photos/a-black-and-white-photo-of-a-hallway-with-statues-RoBNYvi0YPA"
-          >Image by Lucija Ros</a
-        >
+        <div class="heading-div">
+          <h1>Museumonium</h1>
+        </div>
+        <div class="img-src">
+          Image by
+          <a
+            href="https://unsplash.com/photos/a-black-and-white-photo-of-a-hallway-with-statues-RoBNYvi0YPA"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Lucija Ros</a
+          >
+        </div>
       </div>
       <div class="container right">
         <div class="container-child text">
@@ -21,89 +30,75 @@
             this in your life to help you realize your deepest dreams. Sign up
             now to get started. You know you want to.
           </p>
-          <p>Let's do this!</p>
+          <span>Let's do this!</span>
         </div>
-        <div class="container-child form">
+        <div class="container-child form-container">
           <form class="form" action="/" method="post">
-            <div class="info-container user-name">
-              <div class="user-container f-name">
-                <label for="first-name">first name:</label
-                ><input
-                  type="text"
-                  id="first-name"
-                  name="user_firstName"
-                  required
-                />
+            <div class="form-body">
+              <div class="info-container user-name">
+                <div class="user-container f-name">
+                  <label for="first-name">first name</label
+                  ><input
+                    type="text"
+                    id="first-name"
+                    name="user_firstName"
+                    required
+                  />
+                </div>
+                <div class="user-container l-name">
+                  <label for="last-name">last name</label
+                  ><input
+                    type="text"
+                    id="last-name"
+                    name="user_lastName"
+                    required
+                  />
+                </div>
               </div>
-              <div class="user-container l-name">
-                <label for="last-name">last name:</label
-                ><input
-                  type="text"
-                  id="last-name"
-                  name="user_lastName"
-                  required
-                />
+              <div class="info-container user-email-number">
+                <div class="user-container email">
+                  <label for="user_email">Email</label
+                  ><input
+                    type="email"
+                    id="user_email"
+                    name="user_email"
+                    required
+                  />
+                </div>
+                <div class="user-container phone-number">
+                  <label class="user-phone-number" for="user_number"
+                    >phone NUMBER</label
+                  ><input type="tel" id="user_number" name="user_phoneNumber" />
+                </div>
+              </div>
+              <div class="info-container user-pwd">
+                <div class="user-container pwd">
+                  <label for="password">password</label>
+                  <input
+                    type="password"
+                    name="user_password"
+                    id="password"
+                    required
+                  />
+                </div>
+                <div class="user-container pwd2">
+                  <label for="password2">confirm password</label>
+                  <input
+                    type="password"
+                    name="user_password2"
+                    id="password2"
+                    required
+                  />
+                </div>
               </div>
             </div>
-            <div class="info-container user-contact">
-              <div class="user-container email">
-                <label for="user_email">Email:</label
-                ><input
-                  type="email"
-                  id="user_email"
-                  name="user_email"
-                  required
-                />
-              </div>
-              <div class="user-container phone-number">
-                <label for="user_number">phone NUMBER</label
-                ><input type="tel" id="user_number" name="user_phoneNumber" />
-              </div>
-            </div>
-            <div class="info-container user-pwd">
-              <div class="user-container pwd">
-                <label for="password">password</label>
-                <input
-                  type="password"
-                  name="user_password"
-                  id="password"
-                  required
-                />
-              </div>
-              <div class="user-container pwd2">
-                <label for="password2">confirm password</label>
-                <input
-                  type="password"
-                  name="user_password2"
-                  id="password2"
-                  required
-                />
-              </div>
+            <div class="btn container btn-text">
+              <button type="submit">Create account</button>
+              <div>Already have an account? <a href="">Log in</a></div>
             </div>
           </form>
-        </div>
-        <div class="container-child">
-          <div>buttons</div>
         </div>
       </div>
     </div>
   </body>
 </html>
-
-<!-- 
-
-    CONFIRM PASSWORD
-    * Passwords do not match
-    Create Account
-    Already have an account? Log in
-    Photo by Halie West on Unsplash
-
-    
- -->
-
-<!-- 
-    shoutout to: Photo by <a href="https://unsplash.com/@lucija_ros?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Lucija Ros</a> on <a href="https://unsplash.com/photos/a-black-and-white-photo-of-a-hallway-with-statues-RoBNYvi0YPA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-  
-    image source: 
-    https://unsplash.com/photos/a-black-and-white-photo-of-a-hallway-with-statues-RoBNYvi0YPA
-  -->
