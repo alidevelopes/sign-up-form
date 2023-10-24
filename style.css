@@ -124,6 +124,33 @@ label:not(.user-phone-number)::before {
   color: red;
 }
 
+label:is(.user-phone-number)::after {
+  content: "(optional)";
+  margin-left: 0.5rem;
+  font-size: 0.7rem;
+  color: #333;
+}
+
+input:valid {
+  box-shadow: 1px 2px 3px 1px green;
+}
+.invalid-input {
+  /* background-color: red; */
+  /* border: 1px solid red; */
+  box-shadow: 1px 2px 3px 1px red;
+  transition: 0.3s;
+}
+
+.pwd-error-msg {
+  text-align: center;
+  color: red;
+  transition: 0.5s;
+  font-size: 1rem;
+  margin-top: 1rem;
+  font-weight: normal;
+  display: none;
+}
+
 button {
   font-family: var(--label-font);
   font-size: 1rem;

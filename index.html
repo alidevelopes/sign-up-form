@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
     <title>Sign-up Form</title>
   </head>
   <body>
@@ -33,7 +34,7 @@
           <span>Let's do this!</span>
         </div>
         <div class="container-child form-container">
-          <form class="form" action="/" method="post">
+          <form id="form" class="form" action="//" method="post">
             <div class="form-body">
               <div class="info-container user-name">
                 <div class="user-container f-name">
@@ -89,6 +90,7 @@
                     id="password2"
                     required
                   />
+                  <span class="pwd-error-msg">passwords don't match</span>
                 </div>
               </div>
             </div>
